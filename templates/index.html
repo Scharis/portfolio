@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chahid Adnane</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<button class="scroll-up">
+		<i class="fas fa-angle-double-up"></i>
+	</button>
+	<header>
+		<!-- <div class="logo">
+			&lt;Dino&gt;
+		</div> -->
+		<button class="nav-toggle" aria-label="toggle navigation">
+			<span class="hamburger"></span>
+		</button>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a class="nav__link" href="#home">Accueil</a></li>
+				<li class="nav__item"><a class="nav__link" href="#services">Mes compétences</a></li>
+				<li class="nav__item"><a class="nav__link" href="#about">À propos de moi</a></li>
+				<li class="nav__item"><a class="nav__link" href="#work">Mes travaux</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<!-- INTRODUCTION -->
+	<section class="intro" id="home">
+		<!-- -- : modify class -->
+		<h1 class="section__title section__title--intro">
+			Salut, je m'appelle <strong>Chahid Adnane</strong>
+		</h1>
+		<p class="section__subtitle section__subtitle--intro">
+			Ingénieur d'études et développement
+		</p>
+		<img src="../static/img/Adnane.jpeg" alt="" class="intro__img">
+	</section>
+
+
+	<!-- MY SERVICES -->
+	<section class="my-services" id="services">
+		<h2 class="section__title section__title--services">Mes compétences</h2>
+			<div class="services-content">
+				<ul class="services__list">
+					<li class="service__item"><strong>Développement web et mobile</strong><span>Html, Css, JavaScript, JAVA, PHP, Python, Swift</span></li>
+					<li class="service__item"><strong>Systèmes de gestion de base de données</strong><span>MySql, Oracle, SqlServer, SqlLite, PostgreSQ</span></li>
+					<li class="service__item"><strong>DevOps</strong><span>Docker, Kubernetes, Git, Github, Jenkins</span></li>
+					<li class="service__item"><strong>Frameworks</strong><span>Spring MVC, Sping Boot, Angular, Django, Laravel, Bootstrap</span></li>
+					<li class="service__item"><strong>Conception et gestion de projets</strong><span>Méthodologies Agile, Design Patterns</span></li>
+					<li class="service__item"><strong>Intelligence artificielle</strong><span>Tensorflow, Keras, NLP</span></li>
+					<li class="service__item"><strong>Programmation avancée sous Linux</strong><span>Shell Scripting, Gestion des signaux</span></li>
+				</ul>
+			</div>
+
+			<a href="#work" class="btn">Découvrir <strong>ici</strong></a>
+		
+	</section>
+		
+
+	<!-- ABOUT ME -->
+	<section class="about-me" id="about">
+		<h2 class="section__title section__title--about">Qui suis-je ?</h2>
+		<p class="section__subtitle section__subtitle--about">
+			Etudiant ingénieur en Informatique
+		</p>
+
+		<div class="about-me__body">
+			<p>
+				Je suis étudiant en dernière année du cycle d'ingénieur en informatique, option qualité logicielle, j'ai choisis cette filière parceque ça a été toujours une passion.
+			</p>
+			<p>
+				Mes expériences professionnelles, m'ont permis de développer tout un tas de compétences techniques et de renforcer l'ensemble de mes soft skills, à savoir, mon esprit d'équipe, ma curiosité et ma confiance en moi.
+			</p>
+			<p>
+				<i class="fas fa-arrow-right"></i> &nbsp;&nbsp;Intéressé par mon <strong>Art Work</strong> ? &nbsp;&nbsp;<a href="dessins" class="dessins">Voir mes dessins</a>.
+			</p>
+		</div>
+		<img src="../static/img/Adnane.jpg" alt="Adnane in Imlil" class="about-me__img">
+	</section>
+
+
+	<!-- MY WORK -->
+	<section class="my-work" id="work">
+		<h2 class="section__title section__title--work">Projets</h2>
+		<p class="section__subtitle section__subtitle--work">Accadémiques & Professionnels</p>
+
+		<div class="portfolio">
+			<div class="portfolio__item">
+				<img src="../static/img/1.png" alt="" class="portfolio__img">
+				<div class="portfolio--item__desc">
+					<h3>Gestion des étudiants</h3>
+					<p>Une application IOS CRUD pour la gestion des étudiants en utilisant <strong>Swift et core data</strong>.</p>
+				</div>
+			</div>
+			<div class="portfolio__item">
+				<img src="../static/img/3.png" alt="" class="portfolio__img">
+				<div class="portfolio--item__desc">
+					<h3>Météo App</h3>
+					<p>Prévisions météo détaillées, réalisé en utilisant <strong>Swift</strong>.</p>
+				</div>
+			</div>
+			<div class="portfolio__item carousel-container">
+				<i class="fas fa-arrow-left" id="prev-btn"></i>
+				<i class="fas fa-arrow-right" id="next-btn"></i>
+				<div class="carousel-slider">
+					<img src="../static/img/5.png" alt="" class="portfolio__img" id="lastClone">
+					<img src="../static/img/7.png" alt="" class="portfolio__img">
+					<img src="../static/img/4.png" alt="" class="portfolio__img">
+					<img src="../static/img/6.png" alt="" class="portfolio__img">
+					<img src="../static/img/5.png" alt="" class="portfolio__img">
+					<img src="../static/img/7.png" alt="" class="portfolio__img" id="firstClone">
+				</div>
+				<div class="portfolio--item__desc">
+					<h3>Gestion de Conférences</h3>
+					<p>Conception et réalisation d'un site Web pour la gestion et le suivi de conférences organisé au sein de l'université, en utilisant <strong>Spring Boot, Spring Security, JWT et Angular</strong>.</p>
+				</div>
+			</div>
+			<div class="portfolio__item carousel-container">
+				<i class="fas fa-arrow-left" id="prev-btn"></i>
+				<i class="fas fa-arrow-right" id="next-btn"></i>
+				<div class="carousel-slider">
+					<img src="../static/img/8.png" alt="" class="portfolio__img" id="lastClone">
+					<img src="../static/img/10.png" alt="" class="portfolio__img">
+					<img src="../static/img/9.png" alt="" class="portfolio__img">
+					<img src="../static/img/8.png" alt="" class="portfolio__img">
+					<img src="../static/img/10.png" alt="" class="portfolio__img" id="firstClone">
+				</div>
+				<div class="portfolio--item__desc">
+					<h3>Real time chat App</h3>
+					<p>Boite de messagerie pour communiquer avec vos proches, réalisée en utilisant <strong>PHP</strong>.</p>
+				</div>
+			</div>
+			<div class="portfolio__item carousel-container">
+				<i class="fas fa-arrow-left" id="prev-btn"></i>
+				<i class="fas fa-arrow-right" id="next-btn"></i>
+				<div class="carousel-slider">
+					<img src="../static/img/11.png" alt="" class="portfolio__img" id="lastClone">
+					<img src="../static/img/12.png" alt="" class="portfolio__img">
+					<img src="../static/img/11.png" alt="" class="portfolio__img">
+					<img src="../static/img/12.png" alt="" class="portfolio__img" id="firstClone">
+				</div>
+				<div class="portfolio--item__desc">
+					<h3>Volume Calculator</h3>
+					<p>Découvrir le volume représenté par les meubles et les cartons de votre déménagement, réalisé en utilisant <strong>PHP et JavaScript</strong>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FOOTER -->
+	<footer class="footer" id="contact">
+		<a href="mailto:adnanechahid@gmail.com" class="footer__link">adnanechahid@gmail.com</a>
+		<ul  class="social-list">
+			<li class="social-list__item">
+				<a href="https://web.facebook.com/profile.php?id=100008976216361" target="_blank" class="social-list__link social-list__link--fb"><i class="fab fa-facebook"></i></a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://github.com/Scharis" target="_blank" class="social-list__link social-list__link--git"><i class="fab fa-github"></i></a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://www.instagram.com/chahid.adnane/" target="_blank" class="social-list__link"><i class="fab fa-instagram social-list__link--insta"></i></a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://www.linkedin.com/in/adnane-chahid-b3baa2146/" target="_blank" class="social-list__link social-list__link--linked"><i class="fab fa-linkedin"></i></a>
+			</li>
+		</ul>
+	</footer>
+	<script type="text/javascript" src="../static/js/app.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		(function($) {
+		    $.fn.SmoothAnchors = function() {
+
+		        function scrollBodyTo(destination, hash) {
+
+		            // Change the hash first, then do the scrolling. This retains the standard functionality of the back/forward buttons.
+		            var scrollmem = $(document).scrollTop();
+		            window.location.hash = hash;
+		            $(document).scrollTop(scrollmem);
+		            $("html,body").animate({
+		                scrollTop: destination
+		            }, 300);
+
+		        }
+
+		        if (typeof $().on == "function") {
+		            $(document).on('click', 'a[href^="#"]', function() {
+
+		                var href = $(this).attr("href");
+
+		                if ($(href).length == 0) {
+
+		                    var nameSelector = "[name=" + href.replace("#", "") + "]";
+
+		                    if (href == "#") {
+		                        scrollBodyTo(0, href);
+		                    }
+		                    else if ($(nameSelector).length != 0) {
+		                        scrollBodyTo($(nameSelector).offset().top, href);
+		                    }
+		                    else {
+		                        // fine, we'll just follow the original link. gosh.
+		                        window.location = href;
+		                    }
+		                }
+		                else {
+		                    scrollBodyTo($(href).offset().top, href);
+		                }
+		                return false;
+		            });
+		        }
+		        else {
+		            $('a[href^="#"]').click(function() {
+		                var href = $(this).attr("href");
+
+		                if ($(href).length == 0) {
+
+		                    var nameSelector = "[name=" + href.replace("#", "") + "]";
+
+		                    if (href == "#") {
+		                        scrollBodyTo(0, href);
+		                    }
+		                    else if ($(nameSelector).length != 0) {
+		                        scrollBodyTo($(nameSelector).offset().top, href);
+		                    }
+		                    else {
+		                        // fine, we'll just follow the original link. gosh.
+		                        window.location = href;
+		                    }
+		                }
+		                else {
+		                    scrollBodyTo($(href).offset().top, href);
+		                }
+		                return false;
+		            });
+		        }
+		    };
+		})(jQuery);
+
+		$(document).ready(function() {
+		    $().SmoothAnchors();
+		});
+	</script> -->
+</body>
+</html>

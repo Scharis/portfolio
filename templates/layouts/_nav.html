@@ -1,0 +1,17 @@
+ <nav class="navbar">
+	<div class="wrapper">
+		<a href="{% url 'blog:index' %}" class="navbar-brand">Home</a>
+	<ul class="navbar-right">
+		<li><a href="{% url 'blog:upload_book' %}">Upload</a></li>
+		<li><a href="{% url 'blog:book_list' %}">Books</a></li>
+		{% if user.is_authenticated %}
+			<li><a href="{% url 'logout' %}">Log out</a></li>
+		{% else %}
+			<li><a href="{% url 'blog:register' %}">Register</a></li>
+			<li><a href="{% url 'login' %}">Log in</a></li>
+		{% endif %}
+		
+	</ul>
+	</div>
+	
+</nav>

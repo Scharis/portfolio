@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}Projet{% endblock %}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+	{% block stylesheets %}{% endblock %}
+</head>
+<body>
+	{% include 'layouts/_nav.html' %}
+	
+	<div class="wrapper">
+		{% block content %}{% endblock %}	
+	</div>
+
+	{% include 'layouts/_footer.html' %}
+	
+	{% block javascripts %}{% endblock %}
+</body>
+</html>
