@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Chahid Adnane</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"> -->
-	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -172,8 +173,8 @@
 			</li>
 		</ul>
 	</footer>
-	<script type="text/javascript" src="../static/js/app.js"></script>
-	<!-- <script type="text/javascript" src="{% static 'js/app.js' %}"></script> -->
+	<!-- <script type="text/javascript" src="../static/js/app.js"></script> -->
+	<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		(function($) {
